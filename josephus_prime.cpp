@@ -17,7 +17,8 @@ int isPrime (int num) {
     return isPrime;
 }
 
-void getPrime (int num) {
+/*Given a number n, fiils the "primes" vector so that it contains the first n primes*/
+void getNthPrime (int num) {
     int count = primes.size();
     for (int i = primes.empty() ? 2 : primes.back() + 1; count < num; i++) { 
         if (isPrime(i)) {
@@ -28,7 +29,8 @@ void getPrime (int num) {
     
 }
 
-int josephus (int num) {
+/*Calculates the last remaining number*/
+int josephusPrime (int num) {
     int res = 0;
     int hop = 1;
     
